@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-import { render } from 'react-dom';
-import { Text } from 'react-native';
+import { FlatList, Text } from 'react-native';
 
 const EventList = () => {
     return(
-        <Text>Hello Thomas</Text>
+        <FlatList 
+            data={[{name: 'a'}, {name: 'b'}]}
+            renderItem={({item}) => <Text>{item.name}</Text>}
+        />
     )
 }
 
