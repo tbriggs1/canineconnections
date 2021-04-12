@@ -1,21 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import EventList from './components/EventList'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hell I'm Tom</Text>
-      <StatusBar style="auto" />
-    </View>
+    <EventList />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
