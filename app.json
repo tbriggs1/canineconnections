@@ -1,0 +1,12 @@
+{
+  "name": "canineconnections",
+  "displayName": "canineconnections",
+  "expo": {
+    "name": "canineconnections",
+    "slug": "canineconnections",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
