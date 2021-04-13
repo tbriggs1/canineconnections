@@ -4,10 +4,12 @@ import { View, Image, StyleSheet, SafeAreaView } from 'react-native';
 const styles = StyleSheet.create({
     container: {
         paddingTop: 50,
+        flex:1,
+        alignItems: 'center',
     },
     tinyLogo: {
-        width: 66,
-        height: 58,
+        width: 150,
+        height: 250,
       },
 })
 

@@ -1,16 +1,20 @@
 import React from 'react';
 import { StyleSheet, Button, View, SafeAreaView, Text, Alert } from 'react-native';
-import dog from '../images/dog-cartoon-4841690_1920-removebg-preview.png'
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 const Separator = () => (
   <View style={styles.separator} />
 );
 
-const Login = () => (
+const Login = ({ navigation }) => (
   <SafeAreaView style={styles.container}>
-    <View>
+    <View  >
       <Button
+        style={styles.button}
         title="Login"
-        onPress={() => Alert.alert('Simple Button pressed')}
+        onPress={() => {
+            navigation.navigate('Home', {name: 'Home'})
+        }}
       />
     </View>
   </SafeAreaView>
@@ -24,6 +28,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     marginHorizontal: 130,
+    marginVertical: 150,
   },
   title: {
     textAlign: 'center',
@@ -38,10 +43,10 @@ const styles = StyleSheet.create({
     borderBottomColor: '#737373',
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
-  tinyLogo: {
-    width: 300,
-    height: 300,
-  }
+  button:{
+      backgroundColor: 'pink',
+      color: '#2d2d2d',
+  },
 });
 
 export default Login;
