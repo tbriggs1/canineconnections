@@ -12,7 +12,7 @@ const Registration = ({ navigation }) => {
             <View>
                 <HomeLogo />
             </View>
-            <StyledText> Welcome to Canine Connection! Please Sign in or Register! </StyledText>
+            <StyledText> Welcome to Canine Connection! {"\n"} Please Sign in or Register! </StyledText>
             <StyledView>
                 <Login navigation={navigation}/>
             </StyledView>
@@ -22,10 +22,9 @@ const Registration = ({ navigation }) => {
 
 
 const SafeView = styled.SafeAreaView`
-    margin-top: 10rem;
+    margin-top: 200;
     display:flex;
     text-align: center;
-    width: 90vw;
     justify-content: center;
     align-items: center;
     margin-left: auto;

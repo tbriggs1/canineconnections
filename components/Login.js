@@ -22,9 +22,9 @@ const Login = ({ navigation }) => (
 
 const StyledTouchableOpacity = styled.TouchableOpacity`
   background: #7732FF;
-  padding: 0.5rem;
-  border-radius: 15px;
-  margin-top: 1rem;
+  padding: 5px;
+  border-radius: 20;
+  margin-top: 10;
 `
 
 const StyledText = styled.Text`

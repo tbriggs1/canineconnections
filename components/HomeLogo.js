@@ -18,8 +18,8 @@ const HomeLogo = () => {
 
 
 const StyledImage = styled.Image`
-    height: 12rem;
-    width: 12rem;
+    height: 150;
+    width: 150;
     margin-left:auto;
     margin-right: auto;
 `
