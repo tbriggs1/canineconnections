@@ -1,24 +1,12 @@
 import React from 'react';
 import { View, Image, StyleSheet, SafeAreaView } from 'react-native';
-
-const styles = StyleSheet.create({
-    container: {
-        paddingTop: 50,
-        flex:1,
-        alignItems: 'center',
-    },
-    tinyLogo: {
-        width: 150,
-        height: 250,
-      },
-})
+import styled from 'styled-components/native';
 
 const HomeLogo = () => {
     return(
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView> 
             <View>
-                <Image
-                    style={styles.tinyLogo}
+                <StyledImage
                     source={{
                     uri: 'https://raw.githubusercontent.com/tbriggs1/alex_prod/main/dog.png',
                     }}
@@ -27,5 +15,13 @@ const HomeLogo = () => {
         </SafeAreaView>
     )
 }
+
+
+const StyledImage = styled.Image`
+    height: 12rem;
+    width: 12rem;
+    margin-left:auto;
+    margin-right: auto;
+`
 
 export default HomeLogo;
