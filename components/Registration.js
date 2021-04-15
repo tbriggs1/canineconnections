@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { View, Image, StyleSheet, Text, TextInput, Button} from 'react-native';
 import HomeLogo from './HomeLogo';
+import Home from './Home';
 import Login from './Login';
 import { NavigationContainer } from '@react-navigation/native';
 import styled from 'styled-components/native';

@@ -3,6 +3,7 @@ import { StyleSheet, TouchableOpacity, View, SafeAreaView, Text, Alert } from 'r
 import { NavigationContainer,withNavigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import styled from 'styled-components/native';
+import Home from './Home'
 const Separator = () => (
   <View style={styles.separator} />
 );
