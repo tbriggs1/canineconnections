@@ -1,13 +1,18 @@
 import React from 'react';
-import { Style, Text } from 'react-native';
+import { Style, Text, SafeAreaView, View } from 'react-native';
 import styled from 'styled-components/native';
-
+import NavigationBar from './NavigationBar';
 
 const Home = () => {
     return(
-        <Style>
-            <Text>Welcome to the Homescreen!</Text>
-        </Style>
+        <SafeAreaView> 
+            <View>
+                <Text>
+                    HEllo
+                </Text>
+            </View>
+            <NavigationBar />
+        </SafeAreaView>
     )
 }
 

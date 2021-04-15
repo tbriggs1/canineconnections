@@ -5,6 +5,7 @@ import Home from './Home';
 import Login from './Login';
 import { NavigationContainer } from '@react-navigation/native';
 import styled from 'styled-components/native';
+import NavigationBar from './NavigationBar';
 
 
 const Registration = ({ navigation }) => {
@@ -69,6 +70,10 @@ const StyledTouchableOpacity = styled.TouchableOpacity`
   padding: 9px;
   border-radius: 20;
   margin-top: 10;
+  width:200px;
+  display:flex;
+  justify-content: center;
+  text-align: center;
 `
 
 const StyledTextInput = styled.TextInput`
@@ -76,14 +81,13 @@ const StyledTextInput = styled.TextInput`
 `
 
 const FlexText = styled.Text`
-    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 20px;
     font-size: 10px;
 `
 const FlexView = styled.View`
-    display:inline-flex;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    gap: 50;
+    display:flex;
+    margin-top: 5px;
     flex-direction: row;
    
 `

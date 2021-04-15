@@ -9,8 +9,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 // Local Component Imports
 import HomeLogo from './components/HomeLogo';
+import Home from './components/Home';
 import Login from './components/Login';
 import Registration from './components/Registration'
+import NavigationBar from './components/NavigationBar';
+
+
 
 const Stack = createStackNavigator();
 
@@ -28,12 +32,11 @@ export default function App() {
       <Stack.Navigator screenOptions={{headerShown: false}} >
       <Stack.Screen name="Registration" component={Registration} />
         <Stack.Screen
-          name="Home"
-          component={HomeLogo}
+          name="Homepage"
+          component={Home}
           options={{ title: 'Welcome' }}
          
         />
-      
       </Stack.Navigator>
     </NavigationContainer>
   );

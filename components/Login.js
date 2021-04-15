@@ -12,7 +12,7 @@ const Login = ({ navigation }) => (
     <View>
       <StyledTouchableOpacity
          onPress={() => {
-          navigation.navigate('Home', {name: 'Home'})
+          navigation.navigate('Homepage', {name: 'Homepage'})
       }}
        >
          <StyledText> Login </StyledText>
@@ -24,14 +24,15 @@ const Login = ({ navigation }) => (
 const StyledTouchableOpacity = styled.TouchableOpacity`
   background: #894EFF;
   padding: 9px;
-  border-radius: 20;
-  margin-top: 10;
-  width: 170;
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 170px;
 `
 
 const StyledText = styled.Text`
   color: white;
-  font-size: 20;
+  font-size: 20px;
+  text-align: center;
 `
 
 export default Login;
