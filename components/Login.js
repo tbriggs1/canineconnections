@@ -14,21 +14,23 @@ const Login = ({ navigation }) => (
           navigation.navigate('Home', {name: 'Home'})
       }}
        >
-         <StyledText> Get Started! </StyledText>
+         <StyledText> Login </StyledText>
       </StyledTouchableOpacity>
     </View>
 );
 
 
 const StyledTouchableOpacity = styled.TouchableOpacity`
-  background: #7732FF;
-  padding: 5px;
+  background: #894EFF;
+  padding: 9px;
   border-radius: 20;
   margin-top: 10;
+  width: 170;
 `
 
 const StyledText = styled.Text`
   color: white;
+  font-size: 20;
 `
 
 export default Login;

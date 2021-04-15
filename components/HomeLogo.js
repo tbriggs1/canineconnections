@@ -8,7 +8,7 @@ const HomeLogo = () => {
             <View>
                 <StyledImage
                     source={{
-                    uri: 'https://raw.githubusercontent.com/tbriggs1/alex_prod/main/dog.png',
+                    uri: 'https://raw.githubusercontent.com/tbriggs1/alex_prod/main/dog-removebg-preview.png',
                     }}
                 />
             </View>
