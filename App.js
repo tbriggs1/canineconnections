@@ -33,7 +33,7 @@ export default function App() {
       <Stack.Screen name="Registration" component={Registration} />
         <Stack.Screen
           name="Homepage"
-          component={Home}
+          component={NavigationBar}
           options={{ title: 'Welcome' }}
          
         />

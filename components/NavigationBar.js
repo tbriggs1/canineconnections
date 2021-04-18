@@ -16,11 +16,11 @@ import App from '../App';
 
 const NavigationBar = () => {
     return(
-        <View style={{flex:1, justifyContent:'flex-end', height:1000}}>
+        <View style={{flex:1, justifyContent:'flex-end'}}>
             <Tab.Navigator
         initialRouteName="Feed"
         activeColor="#e91e63"
-        barStyle={{ backgroundColor: 'tomato', flex:2, justifyContent: 'flex-end',  }
+        barStyle={{ backgroundColor: 'green' }
         }
         >
         <Tab.Screen
