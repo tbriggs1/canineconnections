@@ -19,13 +19,13 @@ const NavigationBar = () => {
         <View style={{flex:1, justifyContent:'flex-end'}}>
             <Tab.Navigator
         initialRouteName="Feed"
-        activeColor="#e91e63"
-        barStyle={{ backgroundColor: 'green' }
+        activeColor="#894EFF"
+        barStyle={{ backgroundColor: '#F0F0F0' }
         }
         >
         <Tab.Screen
             name="Feed"
-            component={Login}
+            component={Home}
             options={{
             tabBarLabel: 'Home',
             tabBarIcon: ({ color }) => (
@@ -35,9 +35,9 @@ const NavigationBar = () => {
         />
         <Tab.Screen
             name="Notifications"
-            component={Home}
+            component={Login}
             options={{
-            tabBarLabel: 'Updates',
+            tabBarLabel: 'Search',
             tabBarIcon: ({ color }) => (
                 <MaterialCommunityIcons name="bell" color={color} size={26} />
             ),

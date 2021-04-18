@@ -5,13 +5,12 @@ import NavigationBar from './NavigationBar';
 
 const Home = () => {
     return(
-        <SafeAreaView style={{flex:1, justifyContent:'flex-end'}}> 
+        <SafeAreaView> 
             <View>
                 <Text>
                     HEllo
                 </Text>
             </View>
-            <NavigationBar />
         </SafeAreaView>
     )
 }
