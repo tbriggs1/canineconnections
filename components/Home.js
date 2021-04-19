@@ -2,10 +2,25 @@ import React from 'react';
 import { Style, Text, SafeAreaView, View } from 'react-native';
 import styled from 'styled-components/native';
 import NavigationBar from './NavigationBar';
+import Hamburger from 'react-native-hamburger';
+import { useState } from 'react';
 
 const Home = () => {
+    const [bugerMenu, setBurgerMenu] = useState(false);
+    
+    const changeMenu = () => {
+        setBurgerMenu(!bugerMenu)
+    }
+    
     return(
         <SafeAreaView> 
+            <BurgerView>
+                <Hamburger active={bugerMenu}
+                    type="spinCross"
+                    color="purple"
+                    onPress={changeMenu}
+                    />
+            </BurgerView>
             <View>
                 <StyledImage
                     source={{
@@ -16,7 +31,7 @@ const Home = () => {
                     Welcome to Canine Connections!
                 </StyledText>
                 <StyleText>
-                    Click the button deploy to get started
+                    Click the button below to get started
                 </StyleText>
             </View>
             <StyledView>
@@ -27,6 +42,7 @@ const Home = () => {
                     >
                         <StyledTexter> + Add Dog </StyledTexter>
                 </StyledTouchableOpacity>
+        
             </StyledView>
         </SafeAreaView>
     )
@@ -36,7 +52,7 @@ const StyledImage = styled.Image`
     height: 250px;
     width: 300px;
     margin-left:auto;
-    margin-top: 120px;
+    margin-top: 70px;
     margin-right: auto;
     border-radius: 15px;
 `
@@ -74,6 +90,9 @@ const StyledView = styled.View`
   align-items: center;
   margin-top: 15px;
 `
-
+const BurgerView = styled.View`
+    margin-left: 20px;
+    margin-top: 90px;
+`
 
 export default Home;
