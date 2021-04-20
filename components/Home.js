@@ -4,6 +4,8 @@ import styled from 'styled-components/native';
 import NavigationBar from './NavigationBar';
 import Hamburger from 'react-native-hamburger';
 import { useState } from 'react';
+import YourDogs from './YourDogs';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const Home = () => {
     const [bugerMenu, setBurgerMenu] = useState(false);
@@ -13,75 +15,29 @@ const Home = () => {
     }
     
     return(
-        <SafeAreaView> 
-            <BurgerView>
-                <Hamburger active={bugerMenu}
-                    type="spinCross"
-                    color="purple"
-                    onPress={changeMenu}
-                    />
-            </BurgerView>
-            <View>
-                <StyledImage
-                    source={{
-                    uri: 'https://raw.githubusercontent.com/tbriggs1/alex_prod/main/pets-service-cartoon-landing-page-design-welcome-to-animal-store-concept-cute-dog-cat-pet-hotel-shop-veterinary-clinic-183606739.jpg',
-                    }}
-                />
-                <StyledText>
-                    Welcome to Canine Connections!
-                </StyledText>
-                <StyleText>
-                    Click the button below to get started
-                </StyleText>
-            </View>
-            <StyledView>
-                <StyledTouchableOpacity
-                        onPress={() => {
-                        navigation.navigate('Homepage', {name: 'Homepage'})
-                    }}
-                    >
-                        <StyledTexter> + Add Dog </StyledTexter>
-                </StyledTouchableOpacity>
-        
-            </StyledView>
-        </SafeAreaView>
+        <ScrollView>
+            <SafeAreaView> 
+                {/* Burger Menu Styling */}
+                <BurgerView>
+                    {/* Burger Menu */}
+                    <Hamburger active={bugerMenu}
+                        type="spinCross"
+                        color="purple"
+                        onPress={changeMenu}
+                        />
+                </BurgerView>
+                {/* Renders Dog Component with title (title=dog name) and image*/}
+                <YourDogs name={'Meela'} image={'https://raw.githubusercontent.com/tbriggs1/canineconnections/master/images/WhatsApp%20Image%202021-04-13%20at%2013.53.47.jpeg'}/>
+                <YourDogs name={'Fred'} image={'https://github.com/tbriggs1/canineconnections/blob/master/images/border-collie-gallery-outdoors-7-min.jpg?raw=true'}/>
+                <YourDogs name={'Fred'} image={'https://github.com/tbriggs1/canineconnections/blob/master/images/border-collie-gallery-outdoors-7-min.jpg?raw=true'}/>
+            </SafeAreaView>
+        </ScrollView>
     )
 }
 
-const StyledImage = styled.Image`
-    height: 250px;
-    width: 300px;
-    margin-left:auto;
-    margin-top: 70px;
-    margin-right: auto;
-    border-radius: 15px;
-`
-
-const StyledText = styled.Text`
-    font-size: 24px;
-    text-align: center;
-    margin-top: 50px;
-`
-
-const StyleText = styled.Text`
-    font-size: 18px;
-    text-align: center;
-    margin-top: 50px;
-`
-
-const StyledTouchableOpacity = styled.TouchableOpacity`
-  background: white;
-  border: 1px solid #894EFF;
-  padding: 9px;
-  border-radius: 20px;
-  margin-top: 10px;
-  width: 120px;
-`
-
-const StyledTexter = styled.Text`
-  color: #894EFF;
-  font-size: 16px;
-  text-align: center;
+const BurgerView = styled.View`
+    margin-left: 20px;
+    margin-top: 90px;
 `
 
 const StyledView = styled.View`
@@ -90,9 +46,14 @@ const StyledView = styled.View`
   align-items: center;
   margin-top: 15px;
 `
-const BurgerView = styled.View`
-    margin-left: 20px;
-    margin-top: 90px;
+
+const StyledImage = styled.Image`
+    height: 250px;
+    width: 300px;
+    margin-left:auto;
+    margin-top: 10px;
+    margin-right: auto;
+    border-radius: 15px;
 `
 
 export default Home;
