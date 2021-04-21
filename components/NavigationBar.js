@@ -13,6 +13,7 @@ import Registration from './Registration';
 import Login from './Login';
 import Home from './Home';
 import App from '../App';
+import SearchPage from './SearchPage';
 
 const NavigationBar = () => {
     return(
@@ -35,7 +36,7 @@ const NavigationBar = () => {
         />
         <Tab.Screen
             name="Notifications"
-            component={Login}
+            component={SearchPage}
             options={{
             tabBarLabel: 'Search',
             tabBarIcon: ({ color }) => (
