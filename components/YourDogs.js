@@ -21,8 +21,8 @@ const YourDogs = ({image,name}) => {
 
 
 const StyledImage = styled.Image`
-    height: 250px;
-    width: 300px;
+    height: 150px;
+    width: 200px;
     margin-left:auto;
     margin-top: 10px;
     margin-right: auto;
