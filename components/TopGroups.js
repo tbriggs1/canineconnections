@@ -85,7 +85,7 @@ const StyledImage = styled.Image`
 `
 
 const StyledTouchableOpacity = styled.TouchableOpacity`
-  background: #894EFF;
+  background: blue;
   padding: 9px;
   border-radius: 20px;
   margin-top: 10px;
