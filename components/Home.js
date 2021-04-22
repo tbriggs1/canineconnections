@@ -8,6 +8,7 @@ import YourDogs from './YourDogs';
 import { ScrollView } from 'react-native-gesture-handler';
 import HomeDogPage from './HomeDogPage';
 import HomeFriendsPage from './HomeFriendsPage';
+import TopGroups from './TopGroups';
 
 const Home = () => {
     const [bugerMenu, setBurgerMenu] = useState(false);
@@ -30,6 +31,7 @@ const Home = () => {
                 </BurgerView>
                 <HomeDogPage />
                 <HomeFriendsPage />
+                <TopGroups />
             </SafeAreaView>
         </ScrollView>
     )
