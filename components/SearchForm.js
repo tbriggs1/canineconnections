@@ -56,7 +56,7 @@ const StyledView = styled.View`
   justify-content: center;
   align-items: center;
   margin-top: 15px;
-  background: wheat;
+  border: 1px solid #2D2D2D;
   min-width: 100%;
 `
 const FormView = styled.View`

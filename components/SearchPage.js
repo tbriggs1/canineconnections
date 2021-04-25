@@ -2,12 +2,16 @@ import React from 'react';
 import { Style, Text, SafeAreaView, View } from 'react-native';
 import styled from 'styled-components/native';
 import SearchForm from './SearchForm';
-
+import SearchResults from './SearchResults';
+import { ScrollView } from 'react-native-gesture-handler';
 const SearchPage = () => {
     return(
-        <StyledView>
-            <SearchForm />
-        </StyledView>
+         <ScrollView>
+            <StyledView>
+                <SearchForm />
+                <SearchResults />
+            </StyledView>
+        </ScrollView>
     )
 }
 
@@ -17,6 +21,6 @@ const StyledView = styled.View`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 65px;
+  margin-top: 200px;
 `
 
