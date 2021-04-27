@@ -9,8 +9,18 @@ const SearchPage = () => {
          <ScrollView>
             <StyledView>
                 <ButtonView>
-                    <StyledButton> Search </StyledButton>
-                    <StyledButton> Go Lucky </StyledButton>
+                    <StyledTouchableOpacity
+                        onPress={() => {
+                            navigation.navigate('Homepage', {name: 'Homepage'})
+                        }}
+                    ><StyledButton> Message now! </StyledButton>
+                    </StyledTouchableOpacity>
+                    <StyledTouchableOpacity
+                        onPress={() => {
+                            navigation.navigate('Homepage', {name: 'Homepage'})
+                        }}
+                    ><StyledButton> Message now! </StyledButton>
+                    </StyledTouchableOpacity>
                 </ButtonView>
                 <SearchForm />
                 <SearchResults />
@@ -34,16 +44,17 @@ const ButtonView = styled.View`
   justify-content: center;
   align-items: center;
 `
-
 const StyledButton = styled.Text`
     font-size: 10px;
     margin-left: 10px;
-    padding: 5px;
-    padding-top: 7px;
-    padding-bottom: 7px;
     color: white;
-    background: blue;
-    border-radius: 5px;
-    width: 100px;
-    text-align: center;
+`
+
+
+const StyledTouchableOpacity = styled.TouchableOpacity`
+  background: blue;
+  padding: 9px;
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 110px;
 `
