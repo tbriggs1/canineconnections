@@ -4,35 +4,30 @@ import styled from 'styled-components/native';
 import SearchForm from './SearchForm';
 import SearchResults from './SearchResults';
 import { ScrollView } from 'react-native-gesture-handler';
-import { NavigationContainer,withNavigation } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-
-const SearchPage = ({ navigation }) => {
+const GoLucky = () => {
     return(
          <ScrollView>
             <StyledView>
                 <ButtonView>
                     <StyledTouchableOpacity
                         onPress={() => {
-                            navigate('Homepage', {name: 'Homepage'})
+                            navigation.navigate('Homepage', {name: 'Homepage'})
                         }}
-                    ><StyledButton> Search </StyledButton>
+                    ><StyledButton> Message now! </StyledButton>
                     </StyledTouchableOpacity>
                     <StyledTouchableOpacity
                         onPress={() => {
-                            navigate('Homepage', {name: 'Homepage'})
+                            navigation.navigate('Homepage', {name: 'Homepage'})
                         }}
                     ><StyledButton> Message now! </StyledButton>
                     </StyledTouchableOpacity>
                 </ButtonView>
-                <SearchForm />
-                <SearchResults />
             </StyledView>
         </ScrollView>
     )
 }
 
-export default SearchPage;
+export default GoLucky;
 
 const StyledView = styled.View`
   display: flex;

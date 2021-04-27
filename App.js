@@ -35,7 +35,6 @@ export default function App() {
           name="Homepage"
           component={NavigationBar}
           options={{ title: 'Welcome' }}
-         
         />
       </Stack.Navigator>
     </NavigationContainer>
