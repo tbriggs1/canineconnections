@@ -6,6 +6,7 @@ import SearchResults from './SearchResults';
 import { ScrollView } from 'react-native-gesture-handler';
 import { NavigationContainer,withNavigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import GoLucky from './GoLucky';
 
 const SearchPage = ({ navigation }) => {
     return(
@@ -25,8 +26,9 @@ const SearchPage = ({ navigation }) => {
                     ><StyledButton> Message now! </StyledButton>
                     </StyledTouchableOpacity>
                 </ButtonView>
-                <SearchForm />
-                <SearchResults />
+                <GoLucky />
+                {/* <SearchForm />
+                <SearchResults /> */}
             </StyledView>
         </ScrollView>
     )
