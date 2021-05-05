@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import styled from 'styled-components/native';
 import { CoverPhoto, ProfilePicture } from './ProfileImages';
 import { ScrollView } from 'react-native-gesture-handler';
-import { ProfileFriends, ProfileGroups } from './ProfileCollections';
+import { FriendsFollowers, ProfileFriends, ProfileGroups, ProfileName, SocialDetails } from './ProfileCollections';
 
 const Profile = () => (
     <ScrollView>
@@ -14,6 +14,15 @@ const Profile = () => (
         </StyledView>
         <View>
             <ProfilePicture pImage='https://raw.githubusercontent.com/tbriggs1/canineconnections/master/images/profilepic.jpg' />
+        </View>
+        <View>
+            <SocialDetails />
+        </View>
+        <View>
+           <ProfileName />
+        </View>
+        <View>
+            <FriendsFollowers />
         </View>
         <View>
             <ProfileFriends />

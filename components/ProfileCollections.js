@@ -29,17 +29,25 @@ export const ProfileGroups = ({pImage}) => (
     </StyledView>
 )
 
+export const FriendsFollowers = ({pImage}) => (
+    <FriendsView>
+        <StyledText>Following: 40</StyledText>
+        <StyledText>Followers: 50</StyledText>
+    </FriendsView>
+)
 
-export const ProfileDetails = () => (
-    <View>
-        <Text>Slim Shady</Text>
-    </View>
+export const ProfileName = () => (
+    <ProfileView>
+        <ProfileText>Slim Shady</ProfileText>
+    </ProfileView>
 )
 
 export const SocialDetails = () => (
-    <View>
-
-    </View>
+    <PicView>
+        <StyledImage source={{ uri: 'https://raw.githubusercontent.com/tbriggs1/canineconnections/master/images/instagram.png', }} />
+        <StyledImage source={{ uri: 'https://raw.githubusercontent.com/tbriggs1/canineconnections/master/images/youtube.png', }} />
+        <StyledImage source={{ uri: 'https://raw.githubusercontent.com/tbriggs1/canineconnections/master/images/facebook.png', }} />
+    </PicView>
 )
 
 
@@ -47,15 +55,24 @@ const StyledText = styled.Text`
     font-size: 24px;
 `
 
-const StyledImage = styled.Image`
-    height:  140;
-    width: 400;
-    margin-left:auto;
-    margin-right: auto;
-
+const ProfileText = styled.Text`
+    font-size: 20px;
+    
 `
 
-const StyledView= styled.View`
+const ProfileView = styled.View`
+   bottom: 140px;
+   margin-left: 155px;
+`
+
+const PicView = styled.View`
+   display:flex;
+   flex-direction: row;
+   bottom: 80px;
+   margin-left: 150px;
+`
+
+const StyledView = styled.View`
     width: 320px;
     height: auto;
     padding-top: 10px;
@@ -67,7 +84,19 @@ const StyledView= styled.View`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 15px;
+`
+
+
+const FriendsView = styled.View`
+    width: 320px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    margin-top: 15px;
+    bottom: 80px;
+    margin-left: 30px;
 `
 
 const StyledButton = styled.Text`
@@ -85,4 +114,10 @@ const StyledTouchableOpacity = styled.TouchableOpacity`
   width: 80px;
   margin-left: 30px;
   
+`
+
+const StyledImage = styled.Image`
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
 `
