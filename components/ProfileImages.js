@@ -21,7 +21,7 @@ export const ProfilePicture = ({pImage}) => (
 
 const StyledImage = styled.Image`
     height:  140;
-    width: 380;
+    width: 400;
     margin-left:auto;
     margin-right: auto;
 
