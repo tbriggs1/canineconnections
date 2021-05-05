@@ -14,6 +14,7 @@ import Login from './Login';
 import Home from './Home';
 import App from '../App';
 import SearchPage from './SearchPage';
+import Profile from './Profile';
 
 const NavigationBar = () => {
     return(
@@ -46,7 +47,7 @@ const NavigationBar = () => {
         />
         <Tab.Screen
             name="Profile"
-            component={Registration}
+            component={Profile}
             options={{
             tabBarLabel: 'Profile',
             tabBarIcon: ({ color }) => (
