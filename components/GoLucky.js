@@ -1,5 +1,5 @@
 import React from 'react';
-import { Style, Text, SafeAreaView, View } from 'react-native';
+import { Style, Text, SafeAreaView, View, Button } from 'react-native';
 import styled from 'styled-components/native';
 import SearchForm from './SearchForm';
 import SearchResults from './SearchResults';
@@ -10,6 +10,10 @@ const GoLucky = () => {
          <View>
             <View>
                 <FetchCarousel />
+                <ButtonView>
+                    <StyledTouchableOpacity><StyledButton>Add Friend</StyledButton></StyledTouchableOpacity>
+                    <StyledTouchableOpacity><StyledButton>Send Message</StyledButton></StyledTouchableOpacity>
+                </ButtonView>
             </View>
         </View>
     )
@@ -24,23 +28,24 @@ export default GoLucky;
 //   margin-top: 200px;
 // `
 
-// const ButtonView = styled.View`
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-//   align-items: center;
-// `
-// const StyledButton = styled.Text`
-//     font-size: 10px;
-//     margin-left: 10px;
-//     color: white;
-// `
+const ButtonView = styled.View`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`
+const StyledButton = styled.Text`
+    font-size: 10px;
+    margin-left: 10px;
+    color: white;
+`
 
 
-// const StyledTouchableOpacity = styled.TouchableOpacity`
-//   background: blue;
-//   padding: 9px;
-//   border-radius: 20px;
-//   margin-top: 10px;
-//   width: 110px;
-// `
+const StyledTouchableOpacity = styled.TouchableOpacity`
+   background: red;
+   padding: 9px;
+   border-radius: 20px;
+   margin-top: 10px;
+   width: 110px;
+
+`
